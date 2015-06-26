@@ -24,6 +24,9 @@ footer, {
 }
 
 
+.hiddenDiv {
+	display: none;
+}
 
 /*=========================
   Icons
