@@ -13,9 +13,11 @@ var aboutBtn = document.getElementById("about-btn");
 
 
   aboutBtn.addEventListener("click", function(event) {
-    document.getElementById("about").style.display = "block";
-      document.getElementById("projects").style.display = "none";
-      document.getElementById("contacts").style.display = "none";
+        $(".row").fadeIn(1300);
+        document.getElementById("about").style.display = "block";
+        document.getElementById("projects").style.display = "none";
+        document.getElementById("contacts").style.display = "none";
+
      
     
   });
@@ -23,18 +25,20 @@ var aboutBtn = document.getElementById("about-btn");
 
   projectsBtn.addEventListener("click", function(event) {
      console.log("suck it")
-      document.getElementById("projects").style.display = "block";
-     document.getElementById("about").style.display = "none";
-      document.getElementById("contacts").style.display = "none";
+        $(".row").fadeIn(1300);
+        this.style.color="white";
+        document.getElementById("projects").style.display = "block";
+        document.getElementById("about").style.display = "none";
+        document.getElementById("contacts").style.display = "none";
      
    
   });
 
   contactBtn.addEventListener("click", function(event){
-	
-      	document.getElementById("contacts").style.display = "block";
+	     $(".row").fadeIn(1300);
+        document.getElementById("contacts").style.display = "block";
       	document.getElementById("about").style.display = "none";
-      document.getElementById("projects").style.display = "none";
+        document.getElementById("projects").style.display = "none";
       	
   });
 
